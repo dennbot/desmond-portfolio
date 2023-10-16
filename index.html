@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+  integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="home.css">
+</head>
+<body >
+  <nav class="navbar">
+    <!-- LOGO -->
+    <div class="logo" style="color: #ffeba7;">Den</div>
+
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+
+      <!-- USING CHECKBOX HACK -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+
+        <li><a href="#viewabout" style="color: #ffeba7;">About</a></li>
+        <li>
+          <a href="#viewskills" style="color: #ffeba7;">Skills</a>
+        </li>
+        <li><a href="#viewproject" style="color: #ffeba7;">Projects</a></li>
+        <li><a href="#viewcontact" style="color: #ffeba7;">Contact</a></li>
+      </div>
+    </ul>
+  </nav>
+
+<!--About section-->
+<div class="container">
+  <div class="row">
+    <div class="column-66">
+      <h1 class="xlarge-font" style="color: #ffeba7;"><b>Hello,</b></h1>
+      <h1 class="large-font" style="color:white;"><b>I'm Desmond Connery</b></h1>
+      <p style="color: #ffeba7;"><span style="font-size:20px">A computer science student that has a high enthusiasm for frontend web development. I am eager to continue expanding my knowledge into perfecting my frontend development skills.</span></p>
+    </div>
+    <div class="column-33" id="viewabout">
+        <img src="front.jpg" width="335" height="471">
+    </div>
+  </div>
+</div>
+<!--Skills section-->
+<div class="container" style="background-color:#12141d">
+  <div class="row">
+    <div class="column-66">
+      <h1 class="xlarge-font" style="color: #ffeba7;"><b>My Skills</b></h1>
+      <h1 class="large-font" style="color:white;"><b>In Programming Language</b></h1>
+    </div>
+<div class="column">
+    <div class="column-33"  id="viewskills">
+        <div class="box">
+          <img class="img-prog" src="html5-plain.svg" alt="html">
+          <span class="name">Html</span>
+        </div>
+        <div class="box">
+          <img class="img-prog" src="css3-original.svg" alt="css">
+          <span class="name">CSS</span>
+        </div>
+        <div class="box">
+          <img class="img-prog" src="flutter-original.svg" alt="flutter">
+          <span class="name">Flutter</span>
+        </div>
+        <div class="box">
+          <img class="img-prog" src="javascript-original.svg" alt="javascript">
+          <span class="name">JavaScript</span>
+        </div>
+        <div class="box">
+          <img class="img-prog" src="c-original.svg" alt="c">
+          <span class="name">C</span>
+        </div>
+  </div>
+</div>
+</div>
+</div>
+<!--projects section-->
+        <section>
+            <div class="container flow-content">
+              <h2 class="section-title" id="viewproject">Take a look some of my projects</h2>
+              <ul role="list" class="grid">
+                <li>
+                  <article class="card" data-visible="false">
+                    <div class="card__front flow-content">
+                      <img class="card__img mx-auto" src="daifit2.jpg" />
+                      <div class="flow-content" data-spacing="sm">
+                        <p class="card__name">Diafit</p>
+                        <p class="card__position">Application</p>
+                      </div>
+                    </div>
+                    <div class="card__back flow-content">
+                      <p class="card__name">Diafit</p>
+                      <q style="color: #ffeba7;">A simple application using flutter to create an application to help diabetic people to get fit.</q>
+                      <ul role="list" class="card__social flex-group">
+                        <li>
+                          <a href="https://github.com/dennbot/diafit">
+                            <i class="fa-brands fa-github "></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <footer class="card__footer">
+                      <button data-card-controller class="card__toggle">
+                        <i class="fa-solid fa-plus card__toggle-icon"></i>
+                      </button>
+                    </footer>
+                  </article>
+                </li>
+                <li>
+                  <article class="card" data-visible="false">
+                    <div class="card__front flow-content">
+                      <img class="card__img mx-auto" src="pison.png" />
+                      <div class="flow-content" data-spacing="sm">
+                        <p class="card__name">Pisonz Store</p>
+                        <p class="card__position">Website</p>
+                      </div>
+                    </div>
+                    <div class="card__back flow-content">
+                      <p class="card__name">Pisonz Store</p>
+                      <q style="color: #ffeba7;">Using Html, CSS, and JavaScript to create a topup mobile games website.</q>
+                      <ul role="list" class="card__social flex-group">
+                        <li>
+                          <a href="https://www.figma.com/file/3U8WhkMMRKN1Xo9Nnlk6ET/Pisonz-Store?type=design&node-id=0%3A1&mode=design&t=pkuahRJldcT6cZ3O-1">
+                            <i class="fa-brands fa-figma"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <footer class="card__footer">
+                      <button data-card-controller class="card__toggle">
+                        <i class="fa-solid fa-plus card__toggle-icon"></i>
+                      </button>
+                    </footer>
+                  </article>
+                </li>
+              </ul>
+        </section>
+    </div>
+  </div>
+</div>
+<!--contact section-->
+<div class="container">
+  <div class="row">
+    <div class="column-66">
+        <p class="text__01" id="viewcontact">Feel free to connect choose your choice</p>
+    </div>
+    <div class="column-33" id="viewabout">
+        <div class="footer__card">
+            <a href="https://www.instagram.com/desmond.connery/" class="socialContainer containerOne" target="_blank">
+              <i class="fa-brands fa-instagram socialIcon"></i>
+            </a>
+            <a href="www.linkedin.com/in/desmond-connery" class="socialContainer containerTwo" target="_blank">
+              <i class="fa-brands fa-linkedin socialIcon"></i>
+            </a>
+            <a href="mailto: desmond.connery@binus.ac.id" class="socialContainer containerThree" target="_blank">
+              <i class="fa-brands fa-telegram socialIcon"></i>
+            </a>
+            <a href="https://wa.me/+62895338962123" class="socialContainer containerFour" target="_blank">
+              <i class="fa-brands fa-whatsapp socialIcon"></i>
+            </a>
+          </div>
+    </div>
+    <div>
+        <h1 style="color: #ffeba7;"><p>Copyright © 2023 Desmond Connery. All Rights Reserved</p></h1>
+    </div>
+  </div>
+</div>
+
+<script src="main.js"></script>
+
+  <a href="#" class="btnup">UP</a>
+</body>
+</html>
